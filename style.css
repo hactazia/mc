@@ -12,11 +12,11 @@
             }
             .heart{
                 position: relative;
-                width: 200px;
-                height: 200px;
+                width: 100px;
+                height: 100px;
                 background: var(--heartcolor-heart);
                 transform: rotate(45deg);
-                box-shadow: 30px 30px 200px rgb(0,0,0,.5);
+                box-shadow: 15px 15px 50px rgb(0,0,0,.5);
                 animation: heart 1s linear infinite;
             }
             @keyframes heart {
@@ -42,20 +42,20 @@
             .heart:before{
                 content: '';
                 position: absolute;
-                top: -100px;
-                width: 200px;
-                height: 101px;
+                top: -50px;
+                width: 100px;
+                height: 51px;
                 background: var(--heartcolor-heart);
-                border-top-left-radius: 100px;
-                border-top-right-radius: 100px;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
             }
             .heart:after{
                 content: '';
                 position: absolute;
-                left: -100px;
-                width: 101px;
-                height: 200px;
+                left: -50px;
+                width: 51px;
+                height: 100px;
                 background: var(--heartcolor-heart);
-                border-top-left-radius: 100px;
-                border-bottom-left-radius: 100px;
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
             }
