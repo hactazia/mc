@@ -1,25 +1,72 @@
+<!doctype html>
 <html>
     <head>
-        <title>Hactazia</title>
-        <link rel="stylesheet" href="https://unpkg.com/picnic">
-        <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="script.js">
-            
-        </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heart</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-image: radial-gradient(#ff0000,#5a0000);
+            }
+            .heart{
+                position: relative;
+                width: 200px;
+                height: 200px;
+                background: #e80202;
+                transform: rotate(45deg);
+                box-shadow: 30px 30px 200px rgb(0,0,0,.5);
+                animation: animate 1s linear infinite;
+            }
+            @keyframes animate {
+                0% {
+                    transform: rotate(45deg) scale(1);
+                }
+                20% {
+                    transform: rotate(45deg) scale(.8);
+                }
+                40% {
+                    transform: rotate(45deg) scale(1.2);
+                }
+                60% {
+                    transform: rotate(45deg) scale(1);
+                }
+                80% {
+                    transform: rotate(45deg) scale(1.3);
+                }
+                100% {
+                    transform: rotate(45deg) scale(1);
+                }
+            }
+            .heart:before{
+                content: '';
+                position: absolute;
+                top: -100px;
+                width: 200px;
+                height: 101px;
+                background: #e80202;
+                border-top-left-radius: 100px;
+                border-top-right-radius: 100px;
+            }
+            .heart:after{
+                content: '';
+                position: absolute;
+                left: -100px;
+                width: 101px;
+                height: 200px;
+                background: #e80202;
+                border-top-left-radius: 100px;
+                border-bottom-left-radius: 100px;
+            }
+        </style>
     </head>
     <body>
-        <div style="overflow: hidden;height: 250px;">
-            <nav class="demo">
-                <a href="#" class="brand">                     
-                    <img class="logo" src="./logo.png" />                    
-                    <span>Hactazia</span>                    
-                </a>                     
-                <input id="bmenub" type="checkbox" class="show">                     
-                <label for="bmenub" class="burger pseudo button">menu</label>
-                <div class="menu">
-                    <a href="#" class="button icon-puzzle">Menu</a>
-                </div>
-            </nav>
+        <div class="heart">
         </div>
     </body>
 </html>
