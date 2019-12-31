@@ -3,69 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>💛 Cœur</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh;
-                background-image: radial-gradient(#fce100,#5c5200);
-            }
-            .heart{
-                position: relative;
-                width: 200px;
-                height: 200px;
-                background: #dfc700;
-                transform: rotate(45deg);
-                box-shadow: 30px 30px 200px rgb(0,0,0,.5);
-                animation: animate 1s linear infinite;
-            }
-            @keyframes animate {
-                0% {
-                    transform: rotate(45deg) scale(1);
-                }
-                20% {
-                    transform: rotate(45deg) scale(.8);
-                }
-                40% {
-                    transform: rotate(45deg) scale(1.2);
-                }
-                60% {
-                    transform: rotate(45deg) scale(1);
-                }
-                80% {
-                    transform: rotate(45deg) scale(1.3);
-                }
-                100% {
-                    transform: rotate(45deg) scale(1);
-                }
-            }
-            .heart:before{
-                content: '';
-                position: absolute;
-                top: -100px;
-                width: 200px;
-                height: 101px;
-                background: #dfc700;
-                border-top-left-radius: 100px;
-                border-top-right-radius: 100px;
-            }
-            .heart:after{
-                content: '';
-                position: absolute;
-                left: -100px;
-                width: 101px;
-                height: 200px;
-                background: #dfc700;
-                border-top-left-radius: 100px;
-                border-bottom-left-radius: 100px;
-            }
-        </style>
+        <title>❤️ Cœur</title>
+        <link rel="stylesheet" href="https://hactazia.github.io/mc/style.css">
     </head>
-    <body>
+    <body style="
+    --heartcolor-heart: #dfc700;
+    --heartcolor-bg-done: #fce100;
+    --heartcolor-bg-back: #5c5200;">
         <div class="heart">
         </div>
     </body>
