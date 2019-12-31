@@ -1,5 +1,6 @@
 <html>
   <head>
+    <title>Redirection...</title>
     <script type="text/javascript">
       function rjs(){
         document.location.href="./home.html";
