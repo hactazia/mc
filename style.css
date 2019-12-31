@@ -1,4 +1,7 @@
-            body {
+            body {  
+                --heartcolor-heart: #d7d7d7;
+                --heartcolor-bg-done: #fff;
+                --heartcolor-bg-back: #626262;
                 margin: 0;
                 padding: 0;
                 display: flex;
@@ -8,9 +11,6 @@
                 background-image: radial-gradient(var(--heartcolor-bg-done),var(--heartcolor-bg-back));
             }
             .heart{
-                --heartcolor-heart: #d7d7d7;
-                --heartcolor-bg-done: #fff;
-                --heartcolor-bg-back: #626262;
                 position: relative;
                 width: 200px;
                 height: 200px;
