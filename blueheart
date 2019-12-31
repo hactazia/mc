@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>💙 Cœur</title>
+        <link rel="stylesheet" href="https://hactazia.github.io/mc/style.css">
+    </head>
+    <body style="
+    --heartcolor-heart: #1402e8;
+    --heartcolor-bg-done: #2c00ff;
+    --heartcolor-bg-back: #0b005a;">
+        <div class="heart">
+        </div>
+    </body>
+</html>
