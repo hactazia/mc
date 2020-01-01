@@ -51,9 +51,10 @@ body {
     top: -50px; 
     width: 100px; 
     height: 51px; 
-    # background: var(--heartcolor-heart); 
+    background: var(--heartcolor-heart); 
     border-top-left-radius: 50px; 
     border-top-right-radius: 50px; 
+    animation: heart-pulse var(--heartcolor-heart-pulse) linear infinite; 
 } 
 .heart:after
 { 
@@ -62,7 +63,8 @@ body {
     left: -50px; 
     width: 51px; 
     height: 100px; 
-    # background: var(--heartcolor-heart); 
+    background: var(--heartcolor-heart); 
     border-top-left-radius: 50px; 
     border-bottom-left-radius: 50px; 
+    animation: heart-pulse var(--heartcolor-heart-pulse) linear infinite; 
 }
