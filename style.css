@@ -1,4 +1,5 @@
-body {
+body 
+{
     --heartcolor-heart: #d7d7d7; 
     --heartcolor-heart-pulse: 2s; 
     --heartcolor-bg-done: #fff; 
@@ -11,7 +12,8 @@ body {
     min-height: 100vh; 
     background-image: radial-gradient(var(--heartcolor-bg-done),var(--heartcolor-bg-back)); 
 } 
-.heart { 
+.heart 
+{ 
     position: relative;
     width: 100px; 
     height: 100px; 
@@ -21,7 +23,8 @@ body {
     animation: heart var(--heartcolor-heart-pulse) linear infinite; 
 } 
 
-@keyframes heart {
+@keyframes heart 
+{
     00.00% { transform: rotate(45deg) scale(0.9); } 
     10.71% { transform: rotate(45deg) scale(0.9); } 
     17.86% { transform: rotate(45deg) scale(1.1); } 
@@ -34,9 +37,11 @@ body {
     64.29% { transform: rotate(45deg) scale(0.9); } 
     75.00% { transform: rotate(45deg) scale(1.2); }
     82.14% { transform: rotate(45deg) scale(0.9); } 
-    100.0% { transform: rotate(45deg) scale(0.9); } } 
+    100.0% { transform: rotate(45deg) scale(0.9); }
+} 
 
-.heart:before{ 
+.heart:before
+{ 
     content: ''; 
     position: absolute; 
     top: -50px; 
@@ -46,7 +51,8 @@ body {
     border-top-left-radius: 50px; 
     border-top-right-radius: 50px; 
 } 
-.heart:after{ 
+.heart:after
+{ 
     content: ''; 
     position: absolute; 
     left: -50px; 
