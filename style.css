@@ -26,6 +26,7 @@ body {
     transform: rotate(45deg); 
     box-shadow: 15px 15px 50px rgb(0,0,0,.5); 
     animation: heart-pulse var(--heartcolor-heart-pulse) linear infinite; 
+    animation: heart-other var(--heartcolor-heart-pulse) linear infinite; 
 } 
 @keyframes heart-pulse
 {
@@ -54,7 +55,7 @@ body {
     background: var(--heartcolor-heart); 
     border-top-left-radius: 50px; 
     border-top-right-radius: 50px; 
-    animation: heart-pulse var(--heartcolor-heart-pulse) linear infinite; 
+    animation: heart-other var(--heartcolor-heart-pulse) linear infinite; 
 } 
 .heart:after
 { 
@@ -66,5 +67,5 @@ body {
     background: var(--heartcolor-heart); 
     border-top-left-radius: 50px; 
     border-bottom-left-radius: 50px; 
-    animation: heart-pulse var(--heartcolor-heart-pulse) linear infinite; 
+    animation: heart-other var(--heartcolor-heart-pulse) linear infinite; 
 }
