@@ -1,6 +1,6 @@
 body {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     margin: 0; 
     padding: 0; 
     display: flex;
@@ -10,8 +10,8 @@ body {
 }
 .heart-body 
 {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     --heartcolor-heart: #d7d7d7; 
     --heartcolor-heart-pulse: 2s; 
     --heartcolor-bg-done: #fff; 
