@@ -1,9 +1,11 @@
-body 
+.heart-body 
 {
     --heartcolor-heart: #d7d7d7; 
     --heartcolor-heart-pulse: 2s; 
     --heartcolor-bg-done: #fff; 
     --heartcolor-bg-back: #626262; 
+    width: auto;
+    height: auto;
     margin: 0; 
     padding: 0; 
     display: flex;
@@ -23,11 +25,6 @@ body
     box-shadow: 15px 15px 50px rgb(0,0,0,.5); 
     animation: heart-pulse var(--heartcolor-heart-pulse) linear infinite; 
 } 
-@keyframes heart-bg 
-{
-    46.43% { background-image: radial-gradient(#ff0000,#5a0000); }
-    50.00% { background-image: radial-gradient(var(--heartcolor-bg-done),var(--heartcolor-bg-back)); } 
-}
 @keyframes heart-pulse
 {
     00.00% { transform: rotate(45deg) scale(0.9); } 
