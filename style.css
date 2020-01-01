@@ -28,7 +28,7 @@ body
     39.29% { background-image: radial-gradient(red,red); }
     46.43% { background-image: radial-gradient(var(--heartcolor-bg-done),var(--heartcolor-bg-back)); } 
 }
-@keyframes heart-pulse
+@keyframes heart-ptulse
 {
     00.00% { transform: rotate(45deg) scale(0.9); } 
     10.71% { transform: rotate(45deg) scale(0.9); } 
