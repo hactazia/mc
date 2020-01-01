@@ -21,7 +21,7 @@
             }
             @keyframes heart {
                 0% {
-                    transform: rotate(45deg) scale(1.1);
+                    transform: rotate(45deg) scale(1);
                 }
                 20% {
                     transform: rotate(45deg) scale(.7);
