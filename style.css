@@ -6,7 +6,7 @@ body {
     align-items: center; 
     min-height: 100vh; 
     --heartcolor-heart: #d7d7d7; 
-    --heartcolor-heart-pulse: 2s; 
+    --heart-pulse-time: 2s; 
     --heartcolor-bg-done: #fff; 
     --heartcolor-bg-back: #626262; 
     background-image: radial-gradient(var(--heartcolor-bg-done),var(--heartcolor-bg-back));
