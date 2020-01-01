@@ -5,7 +5,6 @@ body {
     justify-content: center; 
     align-items: center; 
     min-height: 100vh; 
-    background: green
     --heartcolor-heart: #d7d7d7; 
     --heartcolor-heart-pulse: 2s; 
     --heartcolor-bg-done: #fff; 
