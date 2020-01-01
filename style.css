@@ -1,82 +1,58 @@
-            body {  
-                --heartcolor-heart: #d7d7d7;
-                --heartcolor-bg-done: #fff;
-                --heartcolor-bg-back: #626262;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh;
-                background-image: radial-gradient(var(--heartcolor-bg-done),var(--heartcolor-bg-back));
-            }
-            .heart{
-                position: relative;
-                width: 100px;
-                height: 100px;
-                background: var(--heartcolor-heart);
-                transform: rotate(45deg);
-                box-shadow: 15px 15px 50px rgb(0,0,0,.5);
-                animation: heart calc((80/60)s) linear infinite;
-            }
-            @keyframes heart {
-                0% {
-                    transform: rotate(45deg) scale(0.9);
-                }
-                calc(75/7)% {
-                    transform: rotate(45deg) scale(0.9);
-                }
-                calc(125/7)% {
-                    transform: rotate(45deg) scale(1.1);
-                }
-                calc(150/7)% {
-                    transform: rotate(45deg) scale(0.9);
-                }
-                calc(225/7)% {
-                    transform: rotate(45deg) scale(0.9);
-                }
-                calc(250/7)% {
-                    transform: rotate(45deg) scale(0.4);
-                }
-                calc(275/7)% {
-                    transform: rotate(45deg) scale(2.1);
-                }
-                calc(325/7)% {
-                    transform: rotate(45deg) scale(0.7);
-                }
-                50% {
-                    transform: rotate(45deg) scale(0.9);
-                }
-                calc(450/7)% {
-                    transform: rotate(45deg) scale(0.9);
-                }
-                75% {
-                    transform: rotate(45deg) scale(1.2);
-                }
-                calc(575/7)% {
-                    transform: rotate(45deg) scale(0.9);
-                }
-                100% {
-                    transform: rotate(45deg) scale(0.9);
-                }
-            }
-            .heart:before{
-                content: '';
-                position: absolute;
-                top: -50px;
-                width: 100px;
-                height: 51px;
-                background: var(--heartcolor-heart);
-                border-top-left-radius: 50px;
-                border-top-right-radius: 50px;
-            }
-            .heart:after{
-                content: '';
-                position: absolute;
-                left: -50px;
-                width: 51px;
-                height: 100px;
-                background: var(--heartcolor-heart);
-                border-top-left-radius: 50px;
-                border-bottom-left-radius: 50px;
-            }
+body {
+    --heartcolor-heart: #d7d7d7; 
+    --heartcolor-heart-pulse: 2s; 
+    --heartcolor-bg-done: #fff; 
+    --heartcolor-bg-back: #626262; 
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    background-image: radial-gradient(var(--heartcolor-bg-done),var(--heartcolor-bg-back)); 
+} 
+.heart { 
+    position: relative;
+    width: 100px; 
+    height: 100px; 
+    background: var(--heartcolor-heart); 
+    transform: rotate(45deg); 
+    box-shadow: 15px 15px 50px rgb(0,0,0,.5); 
+    animation: heart var(--heartcolor-heart-pulse) linear infinite; 
+} 
+
+@keyframes heart {
+    00.00% { transform: rotate(45deg) scale(0.9); } 
+    10.71% { transform: rotate(45deg) scale(0.9); } 
+    17.86% { transform: rotate(45deg) scale(1.1); } 
+    21.43% { transform: rotate(45deg) scale(0.9); } 
+    32.14% { transform: rotate(45deg) scale(0.9); } 
+    35.71% { transform: rotate(45deg) scale(0.4); } 
+    39.29% { transform: rotate(45deg) scale(1.3); } 
+    46.43% { transform: rotate(45deg) scale(0.7); } 
+    50.00% { transform: rotate(45deg) scale(0.9); } 
+    64.29% { transform: rotate(45deg) scale(0.9); } 
+    75.00% { transform: rotate(45deg) scale(1.2); }
+    82.14% { transform: rotate(45deg) scale(0.9); } 
+    100.0% { transform: rotate(45deg) scale(0.9); } } 
+
+.heart:before{ 
+    content: ''; 
+    position: absolute; 
+    top: -50px; 
+    width: 100px; 
+    height: 51px; 
+    background: var(--heartcolor-heart); 
+    border-top-left-radius: 50px; 
+    border-top-right-radius: 50px; 
+} 
+.heart:after{ 
+    content: ''; 
+    position: absolute; 
+    left: -50px; 
+    width: 51px; 
+    height: 100px; 
+    background: var(--heartcolor-heart); 
+    border-top-left-radius: 50px; 
+    border-bottom-left-radius: 50px; 
+}
