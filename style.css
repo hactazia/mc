@@ -1,17 +1,19 @@
-.heart-body 
-{
-    --heartcolor-heart: #d7d7d7; 
-    --heartcolor-heart-pulse: 2s; 
-    --heartcolor-bg-done: #fff; 
-    --heartcolor-bg-back: #626262; 
-    width: auto;
-    height: auto;
+body {
     margin: 0; 
     padding: 0; 
     display: flex;
     justify-content: center; 
     align-items: center; 
     min-height: 100vh; 
+}
+.heart-body 
+{
+    width: auto;
+    height: auto;
+    --heartcolor-heart: #d7d7d7; 
+    --heartcolor-heart-pulse: 2s; 
+    --heartcolor-bg-done: #fff; 
+    --heartcolor-bg-back: #626262; 
     background-image: radial-gradient(var(--heartcolor-bg-done),var(--heartcolor-bg-back));
     animation: heart-bg var(--heartcolor-heart-pulse) linear infinite; 
 } 
