@@ -25,8 +25,8 @@ body
 } 
 @keyframes heart-bg 
 {
-    39.29% { background-image: radial-gradient(#ff0000,#5a0000); }
-    46.43% { background-image: radial-gradient(var(--heartcolor-bg-done),var(--heartcolor-bg-back)); } 
+    46.43% { background-image: radial-gradient(#ff0000,#5a0000); }
+    50.00% { background-image: radial-gradient(var(--heartcolor-bg-done),var(--heartcolor-bg-back)); } 
 }
 @keyframes heart-pulse
 {
