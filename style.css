@@ -17,23 +17,23 @@
                 background: var(--heartcolor-heart);
                 transform: rotate(45deg);
                 box-shadow: 15px 15px 50px rgb(0,0,0,.5);
-                animation: heart .75s linear infinite;
+                animation: heart .8s linear infinite;
             }
             @keyframes heart {
                 0% {
-                    transform: rotate(45deg) scale(1);
+                    transform: rotate(45deg) scale(1.1);
                 }
                 20% {
-                    transform: rotate(45deg) scale(.8);
+                    transform: rotate(45deg) scale(.7);
                 }
                 40% {
-                    transform: rotate(45deg) scale(1.2);
+                    transform: rotate(45deg) scale(1.3);
                 }
                 60% {
                     transform: rotate(45deg) scale(1);
                 }
                 80% {
-                    transform: rotate(45deg) scale(1.3);
+                    transform: rotate(45deg) scale(1.2);
                 }
                 100% {
                     transform: rotate(45deg) scale(1);
