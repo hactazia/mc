@@ -22,8 +22,12 @@ body
     box-shadow: 15px 15px 50px rgb(0,0,0,.5); 
     animation: heart var(--heartcolor-heart-pulse) linear infinite; 
 } 
-
-@keyframes heart 
+@keyframes heart-bg 
+{
+    39.29% { background: red; }
+    46.43% { background-image: radial-gradient(var(--heartcolor-bg-done),var(--heartcolor-bg-back)); } 
+}
+@keyframes heart-pulse
 {
     00.00% { transform: rotate(45deg) scale(0.9); } 
     10.71% { transform: rotate(45deg) scale(0.9); } 
