@@ -25,10 +25,9 @@ body {
     background: var(--heartcolor-heart); 
     transform: rotate(45deg); 
     box-shadow: 15px 15px 50px rgb(0,0,0,.5); 
-    animation: heart-pulse var(--heartcolor-heart-pulse) linear infinite; 
-    animation: heart-other var(--heartcolor-heart-pulse) linear infinite; 
+    animation: heart-other var(--heart-pulse-time) linear infinite; 
 } 
-@keyframes heart-pulse
+@keyframes heart-other
 {
     00.00% { transform: rotate(45deg) scale(0.9); } 
     10.71% { transform: rotate(45deg) scale(0.9); } 
@@ -55,7 +54,7 @@ body {
     background: var(--heartcolor-heart); 
     border-top-left-radius: 50px; 
     border-top-right-radius: 50px; 
-    animation: heart-other var(--heartcolor-heart-pulse) linear infinite; 
+    animation: heart-other var(--heart-pulse-time) linear infinite; 
 } 
 .heart:after
 { 
@@ -67,5 +66,5 @@ body {
     background: var(--heartcolor-heart); 
     border-top-left-radius: 50px; 
     border-bottom-left-radius: 50px; 
-    animation: heart-other var(--heartcolor-heart-pulse) linear infinite; 
+    animation: heart-other var(--heart-pulse-time) linear infinite; 
 }
