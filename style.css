@@ -5,13 +5,7 @@ body {
     justify-content: center; 
     align-items: center; 
     min-height: 100vh; 
-    height: 100%
-    background: green;
-}
-.heart-body 
-{
-    width: 100%;
-    height: auto;
+    background: green
     --heartcolor-heart: #d7d7d7; 
     --heartcolor-heart-pulse: 2s; 
     --heartcolor-bg-done: #fff; 
