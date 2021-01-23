@@ -49,6 +49,7 @@ body {
     background: var(--heartcolor-heart); 
     border-top-left-radius: 50px; 
     border-top-right-radius: 50px; 
+    box-shadow: 15px 15px 50px rgb(0,0,0,.5); 
 } 
 .heart:after
 { 
@@ -60,4 +61,5 @@ body {
     background: var(--heartcolor-heart); 
     border-top-left-radius: 50px; 
     border-bottom-left-radius: 50px; 
+    box-shadow: 15px 15px 50px rgb(0,0,0,.5); 
 }
